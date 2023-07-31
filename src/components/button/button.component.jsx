@@ -6,7 +6,7 @@ const Button = ({text}) => {
       }
   return (
     <button className="display-button" onClick={sayHello}>
-      <h2>{text}</h2>
+      <span className="display-button-text">{text}</span>
     </button>
   );
 };
