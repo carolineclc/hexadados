@@ -1,5 +1,7 @@
 import "./App.scss";
 import Display from "./components/display/display.container";
+import Header from "./components/header/header.component";
+import Projector from "./components/projector/projector.component";
 
 const App = () => {
   const displays = [
@@ -44,7 +46,8 @@ const App = () => {
 
   return (
     <div>
-      <div className="projector"><h1>Image Test</h1></div>
+      <Header/>
+      <Projector/>
       <Display products={products} displays={displays} />
     </div>
   );
