@@ -2,9 +2,6 @@ import "./App.scss";
 import Display from "./components/display/display.container";
 
 const App = () => {
-  function sayHello() {
-    alert("You clicked me!");
-  }
   const displays = [
     { id: 1, name: "SETS DO SEMESTRE" },
     { id: 2, name: "SETS PROMOCIONAIS" },
@@ -47,15 +44,8 @@ const App = () => {
 
   return (
     <div>
-      {displays.map((display) => (
-        <div className="display">
-          <h1 className="display-title">{display.name}</h1>
-          <Display products={products} key={display.id} />
-        </div>
-      ))}
-      <button onClick={sayHello}>
-       teste
-      </button>
+      <div className="projector"><h1>Image Test</h1></div>
+      <Display products={products} displays={displays} />
     </div>
   );
 };
