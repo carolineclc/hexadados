@@ -11,13 +11,13 @@ const Display = ({ products, displays }) => {
             {products.map((product) => {
               return (
                 <div className="display-product-container" key={product.id}>
-                  <div className="display-image">
-                    <div
+                 
+                    <img
                       className="image"
-                      style={{
-                        backgroundImage: `url(${product.imageUrl})`,
-                      }}/>
-                  </div>
+                      src={`${product.imageUrl}`}
+                      alt="Image"
+                      />
+                  
                   <div className="display-description">
                     <h2 className="name">{product.name}</h2>
                     <h3 className="price">{product.price}</h3>

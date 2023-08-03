@@ -1,7 +1,8 @@
 import "./App.scss";
-import Display from "./components/display/display.container";
-import Header from "./components/header/header.component";
-import Projector from "./components/projector/projector.component";
+import goldendiceset from './images/Golden_DiceSet.png'
+import mickeydiceset from './images/Mickey_DiceSet.jpg'
+
+import Home from "./pages/home.component";
 
 const App = () => {
   const displays = [
@@ -13,7 +14,7 @@ const App = () => {
     {
       id: 1,
       title: "hats",
-      imageUrl: "https://picsum.photos/id/237/200/300",
+      imageUrl: goldendiceset,
       name: "Hexa Dados",
       description: "Descricao breve Descricao breve Descricao breve",
       price: "R$ 150",
@@ -21,7 +22,7 @@ const App = () => {
     {
       id: 2,
       title: "jackets",
-      imageUrl: "https://picsum.photos/id/238/200/300",
+      imageUrl: mickeydiceset,
       name: "Hexa Dados",
       description: "Descricao breve Descricao breve Descricao breve",
       price: "R$ 150",
@@ -29,7 +30,7 @@ const App = () => {
     {
       id: 3,
       title: "sneakers",
-      imageUrl: "https://picsum.photos/id/239/200/300",
+      imageUrl: "https://picsum.photos/id/239/300/300",
       name: "Hexa Dados",
       description: "Descricao breve Descricao breve Descricao breve",
       price: "R$ 150",
@@ -37,7 +38,7 @@ const App = () => {
     {
       id: 4,
       title: "womens",
-      imageUrl: "https://picsum.photos/id/310/200/300",
+      imageUrl: "https://picsum.photos/id/310/300/300",
       name: "Hexa Dados",
       description: "Descricao breve Descricao breve Descricao breve",
       price: "R$ 150",
@@ -46,9 +47,7 @@ const App = () => {
 
   return (
     <div>
-      <Header/>
-      <Projector/>
-      <Display products={products} displays={displays} />
+      <Home products={products} displays={displays} />
     </div>
   );
 };

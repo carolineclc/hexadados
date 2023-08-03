@@ -5,8 +5,8 @@ const Button = ({text}) => {
         alert("You clicked me!");
       }
   return (
-    <button className="display-button" onClick={sayHello}>
-      <span className="display-button-text">{text}</span>
+    <button className="button" onClick={sayHello}>
+      <span className="button-text">{text}</span>
     </button>
   );
 };

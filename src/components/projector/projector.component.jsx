@@ -1,15 +1,21 @@
+
+import Button from "../button/button.component";
 import "./projector.style.scss";
+import projector from "../../images/turquoiseCrystal_DiceSet.jpg";
 
 const Projector = () => {
   return (
     <div className="projector">
+
+
       <div
+        className="image"
         style={{
-          backgroundImage: "url(https://picsum.photos/id/237/700/700)",
-        }}>
-     
-        <h1>teste</h1>
-      </div>
+          backgroundImage: `url(${projector})`,
+        }}
+      />
+      <h1 className="announcement">AVISO IMPORTANTE AVISO IMPORTANTE!</h1>
+      <Button className="button" text={"Veja Agora"} />
     </div>
   );
 };
